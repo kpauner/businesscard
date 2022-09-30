@@ -124,6 +124,23 @@ main {
     text-align: center;
 }
 
+.links { /* not(:first-child) for the luls*/
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.links li:first-child {
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    padding: 0.5em 0 1em 0;
+}
+
+.links li:not(:first-child):hover {
+    color:aquamarine;
+}
+
 .event-subjects { /* not(:first-child) for the luls*/
     text-align: center;
     font-size: 1.5rem;
@@ -135,10 +152,6 @@ main {
     text-transform: capitalize;
     font-size: 2.5rem;
     padding: 0.5em 0 1em 0;
-}
-
-.event-subjects li:hover {
-    color:aquamarine;
 }
 
 .event-details {
